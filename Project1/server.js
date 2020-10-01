@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 mongoose.Promise = Promise;
-var dbUrl = 'mongodb+srv://user:user@cluster0.279du.mongodb.net/Cluster0?retryWrites=true&w=majority'
+var dbUrl = 'mongodb+srv://[username]:[password]@cluster0.279du.mongodb.net/Cluster0?retryWrites=true&w=majority'
 
 var Message = mongoose.model('Message', {
     name: String,
